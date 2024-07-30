@@ -1,5 +1,5 @@
 .section{
-    height: 500px;
+    height: 50vh;
     position: static;
 }
 li,.txt{
@@ -27,4 +27,7 @@ li,.txt{
     border-width: 1px;
     border-style: solid;
     border-color: #546285;
+}
+footer{
+    grid-template-rows: 2fr 1fr;
 }
