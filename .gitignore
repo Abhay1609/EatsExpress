@@ -4,3 +4,6 @@ backend/package-lock.json
 frontend/.angular
 frontend/node_modules
 frontend/package-lock.json
+
+backend/.DS_Store
+frontend/.DS_Store
