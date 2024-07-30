@@ -7,3 +7,4 @@ frontend/package-lock.json
 
 backend/.DS_Store
 frontend/.DS_Store
+frontend/dist
