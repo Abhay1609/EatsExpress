@@ -120,7 +120,9 @@ export const getCart=asyncHandler(async(req,res)=>{
     if(!userData){
         throw new errorApi(401,"user not found")
     }
+    console.log(user_id,'existing')
     return res.status(200)
+   
     .json(
         new apiResponse(
             200,
