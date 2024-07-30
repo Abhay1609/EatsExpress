@@ -1,0 +1,17 @@
+<section >
+    <div class="hero_container flex  " @slideIn>
+        <h1 >
+           Frequently Asked<span class="brand"> Questions</span>
+
+        </h1>
+    </div>
+    <div class="button_table flex justify-between mt-10 mb-10" @image>
+       
+        <button [class.brand_button]="shareservce.info()=='description'" (click)="shareservce.getinfo('description')">Our Food</button>
+        <button [class.brand_button]="shareservce.info()=='add'" (click)="shareservce.getinfo('add')">Our Delivery</button>
+        <button [class.brand_button]="shareservce.info()=='review'" (click)="shareservce.getinfo('review')">Our Company</button>
+
+     </div>
+     <app-question></app-question>
+
+</section>

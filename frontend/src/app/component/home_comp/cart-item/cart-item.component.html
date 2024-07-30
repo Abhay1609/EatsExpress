@@ -1,0 +1,41 @@
+<section class="relative">
+    @if(cartservice.data().length!=0){
+    @for(item of cartservice.data();track item._id){
+    <div class="card flex gap-4 p-5 ">
+        <div class="flex items-center"><img [src]="item.item.product.image.url" class="w-24"></div>
+        <div class="container flex m-1.5 justify-around gap-3 flex-col grow ">
+            <div class="flex title items-end " >{{item.item.product.title}}</div>
+            <div class="flex price">${{item.item.product.price.value}}</div>
+            <div class="flex remove cursor-pointer" (click)="cartservice.removeCartItem(item.item.product._id)"><p>Remove<p></div>
+        </div>
+        <div class="flex items-center "> <input type="number" [value]="item.item.quantity" name="quantity" class="flex justify-center pl-1" [min]="1" (input)="onRemove($event,item.item.product._id)"></div>
+
+
+    </div>}
+    <div class="bottom_container mt-7 mb-10 ">
+        <div class="flex justify-between mr-5 ml-5 mb-0 ">
+            <div class="subtotal">Subtotal</div>
+            <div class="sum">$ {{cartservice.getprice()}} USD</div>
+        </div>
+        <div class="flex justify-center" >
+            <button ><a href="/order" class="cursor-pointer">Continue to Chekout</a></button>
+        </div>
+
+    </div>}@else{
+    <div class="flex flex-col h-screen justify-center gap-10">
+        <div class="nofound flex justify-center w-full">
+            We couldn't found any item in your cart.
+        </div>
+        <div class="flex justify-center">
+            <button>
+                <a href="/order" class="cursor-pointer">
+                Start an Order
+            </a>
+            </button>
+        </div>
+        <div class="image flex justify-center">
+            <img src="https://assets.website-files.com/5e865e09d8efa3310676b585/5e865e09d8efa3672576b5ef_Drawn%20Arrow.svg" >
+        </div>
+
+    </div>}
+</section>

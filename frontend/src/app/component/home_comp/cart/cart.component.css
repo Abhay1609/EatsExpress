@@ -1,0 +1,40 @@
+.window{
+    height: 100vh;
+    width: 60vw;
+    background-color: white;
+    position: fixed;
+    top:0px;
+    right: -100%;
+    z-index: 200;
+}
+.empty{
+    background-color: rgba(0,0,0,0.8);
+    height: 100vh;
+    width: 40vw;
+    position: fixed;
+    top: 0px;
+    left:-100%;
+    z-index: 200;
+}
+.isblur{
+    left:0%
+}
+
+.hero1_subheading{
+    color:#191b22;
+    font-size: 28px;
+    line-height: 1.1;
+    font-weight: 700;
+
+}
+.hero1_heading{
+    border-bottom-color:#e6e6e6 ;
+    border-bottom-style:solid ;
+    border-bottom-width:1px ;
+}
+.icon{
+    font-size: 22px;
+}
+.isopen{
+    right:0%
+}

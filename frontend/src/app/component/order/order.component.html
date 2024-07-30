@@ -1,0 +1,22 @@
+<section  >
+    <div class="hero_container">
+        <h1  @slideIn>
+            Get your food <span class="brand">delivered</span>, or <span class="brand">pick-up</span> in store.
+
+        </h1>
+    </div>
+    <div class="button_table flex " @image>
+        <button (click)="getAllData()" [class.brand_button]="homeservice.category()=='all'">Full Menu</button>
+        <button (click)="getCategoryData('Burger') " [class.brand_button]="homeservice.category()=='Burger'"> Burgers</button>
+        <button (click)="getCategoryData('Slides')" [class.brand_button]="homeservice.category()=='Slides'">Sides</button>
+        <button (click)="getCategoryData('Juice')" [class.brand_button]="homeservice.category()=='Juice'">Drinks</button>
+     </div>
+ <div class="data">
+        <app-order-card [itemsList]="itemList" ></app-order-card>
+    </div>
+     <div class="flex justify-center mt-5" @image>
+        <button class="brand_button" (click)="getNextData()"[class.hide]="(homeservice.category()!='all')||previous" >Next <i class="ri-arrow-right-s-line"></i></button>
+        <button class="dark_button" [class.hide]="(homeservice.category()!='all')||(!previous)" (click)="getAllData()" ><i class="ri-arrow-left-s-line"></i> Previous </button>
+        
+     </div>
+</section>

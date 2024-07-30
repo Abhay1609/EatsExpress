@@ -1,0 +1,114 @@
+article{
+    font-family: Inter , sans-serif;
+}
+/* .main_text{
+    height: 82vh;
+} */
+ .main_text{
+    padding-top: 50px;
+        padding-bottom: 100px;
+
+        font-weight: 900;
+        text-align: left;
+       
+
+
+ }
+.main_image{
+    height: 30rem;
+    width: 50rem;
+    display: flex;
+    justify-content: right;
+    padding:1rem;
+    align-content: center;
+    align-self: center;
+    padding-right: 0;
+    padding-top: 2rem;
+}
+.main_heading{
+    font-size: 3.4rem;
+    font-weight: 900;
+    margin-bottom: 1rem;
+    line-height: 1;
+    letter-spacing: - 0.5px ;
+    word-spacing:- 0.8px;
+    text-align: center;
+    text-align: left;
+
+    /* width: 8rem; */
+}
+.brand{
+    color: #35b8be;
+}
+.main_subheading{
+    color: #546285;
+    font-size: 1rem;
+    line-height: 1.34;
+    font-weight: 300;
+    text-align: left;
+
+    /* margin: 1rem; */
+  
+}
+.button{
+    background-color: #35b8be;
+    border-radius: 6px;
+    text-align: center;
+    color: white;
+    background-color: #35b8be;
+    padding: 1rem;
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    justify-content: start;
+    align-items: start;
+    
+    background-image: url("https://assets.website-files.com/5e865e09d8efa3310676b585/5e865e09d8efa3345876b5c4_Button%20Wave.svg");
+    background-position: 0px 0px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    -webkit-transition: background-color 250ms ease;
+    transition: background-color 250ms ease;
+}
+.hero_container{
+    height: 40rem;
+    padding: 2rem;
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    background-color: transparent;
+    background-image: url("https://assets.website-files.com/5e865e09d8efa3310676b585/5e865e09d8efa3b4c076b5ee_BG%20Shape%20Content.svg");
+    /* background-position: 51% 150%;
+    background-size: 90% 100%; */
+    background-repeat: no-repeat;
+
+}
+@media screen and (max-width:991px) {
+    .hero_container{
+        flex-direction: column;
+        gap: 2rem;
+    }
+    .center{
+        justify-content: center;
+        align-items: center;
+        align-self: center;
+        text-align: center;
+    }
+    .main_subheading{
+        padding: 2rem;
+    }
+    .hero_container{
+        height: 80rem;
+        margin: 2rem;
+    }
+    .main_image{
+        margin-top: 8rem;
+        margin-bottom: 5rem;
+        justify-content: center;
+        height: 40rem;
+        width: 90vw;
+        
+        
+    }
+
+
+}

@@ -1,0 +1,38 @@
+.hero_container{
+
+    padding:2rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.04);
+
+}
+.hero_title{
+    color: #35b8be;
+    font-size: 18px;
+    font-weight: 600;
+    /* position: relative; */
+
+}
+.answer{
+    color:#7e828f;
+    font-size: 18px;
+    line-height: 1.5;
+    letter-spacing: -0.25px;
+    margin-left: 2rem;
+    text-align: justify;
+    height: 0px;
+    visibility: hidden;
+   
+    margin-right: 3rem;
+}
+.visible{
+    visibility: visible;
+    height: fit-content;
+}
+@media screen and (max-width:991px) {
+    .visible{
+        height: fit-content;
+
+    }
+
+
+
+}

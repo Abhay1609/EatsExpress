@@ -1,0 +1,48 @@
+<header class="flex flex-col w-screen gap-4 ">
+    <div class="header">
+        <div class="header_text ">       We're open and available for takeaway & delivery. <a href="/order" class="cursor-pointer">Order Now</a></div>
+    </div>
+    <div>
+    <nav>
+        <div class="nav_container relative flex justify-between" >
+        <div class="logo">
+            <a href="/" class="cursor-pointer">
+            <div><img src="https://assets.website-files.com/5e865e09d8efa3310676b585/5e865e09d8efa341ab76b5e7_Logo.svg" width="35px" height="35px"></div>
+        </a>
+        </div>
+        <div class="flex flex-row gap-3">
+        <ul class="nav_link list-none flex flex-col  absolute" [class.show_link]="homeservice.navbar()" [@slideIn]="state">
+            <li class="home flex grow ml-3" [class.active]="data[0]==''"  ><a href="/" class="cursor-pointer">Home</a></li>
+            <li class="Order flex grow ml-3" [class.active]="data[0]=='order'" ><a  href="/order" class="cursor-pointer">Order</a></li>
+            <li class="Company flex grow ml-3" [class.active]="data[0]=='company'" ><a  href="/company" class="cursor-pointer">Company</a></li>
+            <li class="FAQ flex grow ml-3" [class.active]="data[0]=='faq'"><a  href="/faq" class="cursor-pointer">FAQ</a></li>
+            <li class="Contact cursor-pointer flex grow ml-3"[class.active]="data[0]=='contact'"  >Contact</li>
+
+
+        </ul>
+        <div class="flex gap-3">
+        <div class="cart" (click)="cartservice.openCartToggle()" >
+            <i class="ri-shopping-cart-2-fill icon"></i>
+        <div class="cart_quantity">
+            {{cartservice.getquantity()}}
+        </div>
+       
+
+        </div>
+        <div class="nav_button cart"   (click)="homeservice.opennavbar()" [class.dark]="homeservice.navbar()" (click)="updatestate()">
+            <i class="ri-menu-fill icon cart_icon" [class.dark_icon]="homeservice.navbar()"></i>
+            
+        </div>
+    </div>
+        <app-cart  ></app-cart>
+    </div>
+
+        
+
+   
+
+    
+</div>
+</nav>
+</div>
+</header>

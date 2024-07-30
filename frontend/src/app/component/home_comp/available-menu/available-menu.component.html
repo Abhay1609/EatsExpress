@@ -1,0 +1,35 @@
+<section>
+    <div class="herosection">
+    <div class="top_text">
+    <div class="hero3_heading">
+        Browse our menu
+    </div>
+    <div class="hero3_subheading">
+        Use our menu to place an order online, or <a  class="brand">phone</a> our store to
+place a pickup order. Fast and fresh food. 
+
+    </div>
+</div>
+<div class="flex button_table">
+    <button (click)="getCategoryData('Burger') " [class.brand_button]="homeservice.category()=='Burger'||homeservice.category()=='all'"> Burgers</button>
+    <button (click)="getCategoryData('Slides')" [class.brand_button]="homeservice.category()=='Slides'">Sides</button>
+    <button (click)="getCategoryData('Juice')" [class.brand_button]="homeservice.category()=='Juice'">Drinks</button>
+</div>
+
+
+
+    <app-order-card [itemsList]="homeservice.burgerData()"></app-order-card>
+    <div class="flex justify-center" > 
+    <button class="brand_button">
+        <a href="/order">
+        Sell Full Menu 
+    </a>
+    </button>
+</div>
+</div>
+
+</section>
+
+
+
+

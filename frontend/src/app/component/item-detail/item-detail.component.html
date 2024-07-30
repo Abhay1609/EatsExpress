@@ -1,0 +1,44 @@
+<section>
+    @for(i of this.homeservice.getproduct(title);track i._id ){
+            
+  
+    <div class="hero_container flex  " @slideIn>
+        <h1>
+          {{i.title}}
+ </h1>
+    </div>
+    <div @image>
+        <div class="flex flex_container gap-5">
+        <div class="image flex center p-10">
+            <img [src]="i.image.url" class="rounded-md">
+        </div>
+        <div class="flex flex-col">
+            <h3 class="title center">{{i.title}}</h3>
+            <div class="price center">$ {{i.price.value}} USD</div>
+            <div class="plain_line"></div>
+            <div class="info">{{i.info.description}}</div>
+            <div class="flex justify-start gap-5 pl-2 pr-2">
+                <div ><input class="input" type="number"  [value]="quantity" [min]=1  #input></div>
+        <button  (click)="cartservice.updateCartItem(i._id,input.value)" (click)="cartservice.openCartToggle()" class="brand_button">Add to Cart</button>
+            </div>
+            <div class="plain_line"></div>
+        </div>
+    </div>
+
+        <div class="bg_contianer">
+            <div class=" button_table flex justify-center">
+                <button [class.brand_button]="sharedservice.info()=='description'" (click)="sharedservice.getinfo('description')">Description</button>
+                <button [class.brand_button]="sharedservice.info()=='add'" (click)="sharedservice.getinfo('add')">Additional Information</button>
+                <button [class.brand_button]="sharedservice.info()=='review'" (click)="sharedservice.getinfo('review')">Reviews (0)</button>
+            </div>
+            <div class="description">
+                {{i.info.addition}}
+
+            </div>
+        </div>
+    </div> }
+    <div @image> 
+        <div class="mb-28 mt-20 hero_container" ><h1><span class="hero_container">Realted Items</span></h1></div>
+        <app-order-card [itemsList]="homeservice.getByCategory(category)" ></app-order-card>
+    </div>
+</section>

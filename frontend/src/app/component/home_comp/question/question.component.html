@@ -1,0 +1,18 @@
+<div>
+    @for(item of homeservice.faq();track item._id){
+    <div class="flex justify-between hero_container">
+    <div class="hero_title">
+       {{item.question}}
+    
+    </div>
+    <div  >
+        <i class="ri-add-circle-line text-xl cursor-pointer" (click)="homeservice.showanswer(item._id)" [@slideIn]="homeservice.faqtoogle()"></i>
+
+    </div>
+</div>
+    <div class="answer" [class.visible]="item._id==homeservice.faqselect()">
+            {{item.answer}}
+
+    </div>}
+
+ </div>

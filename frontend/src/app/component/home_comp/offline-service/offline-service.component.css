@@ -1,0 +1,108 @@
+.hero4_heading{
+    font-size: 3.4rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    text-align: left;
+    color: #35b8be;
+    letter-spacing: -0.03em;
+    margin-top: 2rem;
+    line-height: 1;
+    padding-top: 2rem;
+
+}
+.hero4_subheading{
+    color: #546285;
+    text-align: left;
+    margin-bottom: 2rem;
+
+}
+button{
+    background-color: #35b8be;
+    border-radius: 6px;
+    text-align: center;
+    color: white;
+    padding: 0.75rem;
+    background-color: #35b8be;
+    background-image: url('https://assets.website-files.com/5e865e09d8efa3310676b585/5e865e09d8efa3345876b5c4_Button%20Wave.svg');
+    background-position: 0px 0px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #fff;
+}
+.card{
+    /* margin-top: 2rem; */
+    height: 400px;
+    background-color: #35b8be;
+    background-image: url(https://assets.website-files.com/5e865e09d8efa3310676b585/5e865e09d8efa3a0b276b5f7_Pattern%2001.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.button{
+    color: #35b8be;
+    border-radius: 6px;
+    text-align: center;
+    background-color: white;
+    padding: 0.75rem;
+    margin:2rem;
+
+
+}
+.card_text{
+    /* margin:2rem; */
+    font-weight:800;
+    color:white;
+    font-size: 3.5rem;
+    
+}
+span{
+    color:#1b9097;
+}
+.image{
+    width: 60rem;
+}
+.image2{
+    height: 400px;
+    margin:0px;
+}
+section{
+    padding: 2rem;
+}
+.hero2_container{
+    background-color: transparent;
+    background-image: url("https://assets.website-files.com/5e865e09d8efa3310676b585/5e865e09d8efa3b4c076b5ee_BG%20Shape%20Content.svg");
+    background-position: 51% 150%;
+    background-size: 90% 100%;
+    background-repeat: no-repeat;
+}
+@media screen and (max-width:991px) {
+    .flex_container{
+        flex-direction: column;
+        gap: 2rem;
+        margin-top: 4rem;
+        margin-bottom: 4rem;
+    }
+    .center{
+        justify-content: center;
+        align-items: center;
+        align-self: center;
+        text-align: center;
+    }
+    .main_subheading{
+        padding: 2rem;
+    }
+    .hero_container{
+        height: 80rem;
+        margin: 2rem;
+    }
+    .image{
+        margin-top: 8rem;
+        margin-bottom: 5rem;
+        justify-content: center;
+        height: 40rem;
+        width: 90vw;
+        
+        
+    }
+
+
+}
