@@ -34,11 +34,11 @@ ng serve
 Here is an example of how the project looks:
 
 
-![Home Page](https://github.com/Abhay1609/EatsExpress/blob/main/public/Screenshot%202024-07-29%20at%2011.33.13%20AM.png)
+![Home Page](https://github.com/Abhay1609/EatsExpress/blob/main/frontend/public/Screenshot%202024-07-29%20at%2011.33.13%20AM.png)
 
-![Cart Item](https://github.com/Abhay1609/EatsExpress/blob/main/public/Screenshot%202024-07-29%20at%2011.33.53%20AM.png)
+![Cart Item](https://github.com/Abhay1609/EatsExpress/blob/main/frontend/public/Screenshot%202024-07-29%20at%2011.33.53%20AM.png)
 
-![Items](https://github.com/Abhay1609/EatsExpress/blob/main/public/Screenshot%202024-07-29%20at%2011.34.57%20AM.png)
+![Items](https://github.com/Abhay1609/EatsExpress/blob/main/frontend/public/Screenshot%202024-07-29%20at%2011.34.57%20AM.png)
 
 
 
