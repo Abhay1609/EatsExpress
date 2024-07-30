@@ -51,6 +51,7 @@ export const getItem=asyncHandler(async(req,res)=>{
     if(!user){
         throw new errorApi(500,"Empty")
     }
+    console.log("new")
     const options={
         httpOnly:true,
         secure:true
