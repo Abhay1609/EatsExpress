@@ -15,7 +15,7 @@ export class CartService{
     // data=signal(this.getCartItem())
     data=signal<CART[]>([])
     toggle=signal<string>('close')
-    url='http://localhost:8000/api/item/'
+    url='https://eatsexpress-4.onrender.com/api/item/'
     httpClient=inject(HttpClient)
     getCartItem(){
         const subscription=this.httpClient.get<ApiResponse>(this.url+"getCart",{withCredentials:true}).subscribe({
