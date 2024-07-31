@@ -13,7 +13,7 @@ export class HomeService{
     faqtoogle=signal<string>('close')
     getitem(){
         const httpClient = inject(HttpClient)
-        const subscription=httpClient.post<{data:any[]}>("https://eatsexpress-4.onrender.com/api/item/get",{},{withCredentials:true}).subscribe({
+        const subscription=httpClient.post<{data:any[]}>("https://eatsexpress-3.onrender.com/api/item/get",{},{withCredentials:true}).subscribe({
             next:(res)=>{
                 this.itemData.set(res.data)
                 // return res.data
@@ -26,7 +26,7 @@ export class HomeService{
     }
     getfaq(){
         const httpclient=inject(HttpClient)
-        httpclient.get<{data:any[]}>("https://eatsexpress-4.onrender.com/api/item/getfaq").subscribe({
+        httpclient.get<{data:any[]}>("https://eatsexpress-3.onrender.com/api/item/getfaq").subscribe({
             next:(res)=>{
                 this.faq.set(res.data)
             },error:(err)=>{console.log(err)}

@@ -51,7 +51,7 @@ export class OrderComponent {
   
   constructor(){
     effect(()=>{this.itemList=this.homeservice.itemData().slice(0,8)})
-    effect(()=>{console.log(this.homeservice.itemData())})
+    // effect(()=>{console.log(this.homeservice.itemData())})
     
   }
   getAllData(){
@@ -62,7 +62,7 @@ export class OrderComponent {
   getNextData(){
     this.itemList=this.homeservice.itemData().slice(8,14);
     this.previous=true;
-    window.scrollTo({ top: 100, behavior: 'smooth' });
+    // window.scrollTo({ top: 100, behavior: 'smooth' });
 
   }
   itemList:DATA[]=this.homeservice.itemData()

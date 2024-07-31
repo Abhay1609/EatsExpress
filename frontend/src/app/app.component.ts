@@ -26,7 +26,7 @@ export class AppComponent {
     this.homeservice.getfaq()
     this.cartservice.getCartItem()
     
-    console.log(this.homeservice.itemData())
+    // console.log(this.homeservice.itemData())
     
   }
 

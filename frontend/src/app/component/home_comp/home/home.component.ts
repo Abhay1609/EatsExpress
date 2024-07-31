@@ -21,7 +21,7 @@ export class HomeComponent {
   this.cartservice.getCartItem()
   this.homeservice.getitem()
 
-  console.log(this.homeservice.itemData())
+  // console.log(this.homeservice.itemData())
   effect(()=>{this.homeservice.getfilter('Burger')}, { allowSignalWrites: true })
 
 }

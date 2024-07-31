@@ -42,9 +42,9 @@ export class HeaderComponent {
   cartservice=inject(CartService)
   homeservice=inject(HomeService)
   sharedservice=inject(SharedService)
-  url=window.location.href
-  data=this.url.split('/').reverse()
- 
+  //url=window.location.href
+  // data=this.url.split('/').reverse()
+ data='home'
 
 
 
