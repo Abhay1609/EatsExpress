@@ -8,22 +8,27 @@ import { ItemDetailComponent } from './component/item-detail/item-detail.compone
 export const routes: Routes = [
     {
         path:'',
+        'title':"Home",
         component:HomeComponent,
     },
     {
         path:'order',
+        'title':"order",
         component:OrderComponent,
     },
     {
         path:'company',
+        'title':"company",
         component:CompanyComponent,
     },
     {
         path:'faq',
+        'title':"faq",
         component:FaqComponent,
     },
     {
         path:'item/:title/:category',
+        'title':"item",
         component:ItemDetailComponent,
     }
 
