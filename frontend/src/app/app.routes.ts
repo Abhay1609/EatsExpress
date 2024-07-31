@@ -7,7 +7,7 @@ import { ItemDetailComponent } from './component/item-detail/item-detail.compone
 
 export const routes: Routes = [
     {
-        path:'',
+        path:'home',
         'title':"Home",
         component:HomeComponent,
     },
@@ -30,6 +30,10 @@ export const routes: Routes = [
         path:'item/:title/:category',
         'title':"item",
         component:ItemDetailComponent,
+    },{
+        'path':'',
+        redirectTo:'/home',
+        pathMatch:'full'
     }
 
 ];
