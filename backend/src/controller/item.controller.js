@@ -9,9 +9,7 @@ export const additem=asyncHandler(async(req,res)=>{
 
     const existingItem=Item.findOne({title:title});
    
-    // if(existingItem){
-    //     throw new errorApi(401,"already exist")
-    // }
+
     const item=await Item.create({
         title,
         image:{url:url},
@@ -51,7 +49,7 @@ export const getItem=asyncHandler(async(req,res)=>{
     if(!user){
         throw new errorApi(500,"Empty")
     }
-    // console.log("new")
+  
     const options={
         httpOnly:true,
         secure:true
