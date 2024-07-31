@@ -38,3 +38,16 @@
 .isopen{
     right:0%
 }
+
+@media screen and (max-width:991px) {
+    .window{
+        width: 100vw;
+        height: 110vh;
+        z-index: 200;
+        padding: 1rem;
+    }
+    .empty{
+        width: 0px;
+    }
+
+}

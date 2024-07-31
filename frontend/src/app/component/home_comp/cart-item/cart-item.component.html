@@ -1,5 +1,6 @@
 <section class="relative">
     @if(cartservice.data().length!=0){
+        <div class="actual_data">
     @for(item of cartservice.data();track item._id){
     <div class="card flex gap-4 p-5 ">
         <div class="flex items-center"><img [src]="item.item.product.image.url" class="w-24"></div>
@@ -12,6 +13,7 @@
 
 
     </div>}
+</div>
     <div class="bottom_container mt-7 mb-10 ">
         <div class="flex justify-between mr-5 ml-5 mb-0 ">
             <div class="subtotal">Subtotal</div>

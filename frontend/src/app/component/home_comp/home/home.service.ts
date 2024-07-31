@@ -1,8 +1,11 @@
 import { Injectable,inject,signal } from "@angular/core";
 import { HttpClient } from "@angular/common/http";
 import { DATA,FAQ } from "../order-card/order-modle";
+
 @Injectable({providedIn:'root'})
 export class HomeService{
+    // url="http://localhost:8000/api/item/"
+    url="https://eatsexpress-3.onrender.com/api/item/"
     navbar=signal<boolean>(false);
     itemData=signal<DATA[]>([]);
     category=signal("all");
@@ -13,7 +16,7 @@ export class HomeService{
     faqtoogle=signal<string>('close')
     getitem(){
         const httpClient = inject(HttpClient)
-        const subscription=httpClient.post<{data:any[]}>("https://eatsexpress-3.onrender.com/api/item/get",{},{withCredentials:true}).subscribe({
+        const subscription=httpClient.post<{data:any[]}>(this.url+"get",{},{withCredentials:true}).subscribe({
             next:(res)=>{
                 this.itemData.set(res.data)
                 // return res.data
@@ -23,10 +26,12 @@ export class HomeService{
         })
 
 
-    }
+
+    }   
+                                // https://eatsexpress-3.onrender.com/api/item/getfaq
     getfaq(){
         const httpclient=inject(HttpClient)
-        httpclient.get<{data:any[]}>("https://eatsexpress-3.onrender.com/api/item/getfaq").subscribe({
+        httpclient.get<{data:any[]}>(this.url+"getfaq").subscribe({
             next:(res)=>{
                 this.faq.set(res.data)
             },error:(err)=>{console.log(err)}

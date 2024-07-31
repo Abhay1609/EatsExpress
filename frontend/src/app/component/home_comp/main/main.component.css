@@ -70,7 +70,7 @@ article{
     transition: background-color 250ms ease;
 }
 .hero_container{
-    height: 40rem;
+    height: fit-content;
     padding: 2rem;
     display: flex;
     position: relative;
@@ -79,13 +79,14 @@ article{
     background-image: url("https://assets.website-files.com/5e865e09d8efa3310676b585/5e865e09d8efa3b4c076b5ee_BG%20Shape%20Content.svg");
     /* background-position: 51% 150%;
     background-size: 90% 100%; */
+    background-size: cover;
     background-repeat: no-repeat;
 
 }
 @media screen and (max-width:991px) {
     .hero_container{
         flex-direction: column;
-        gap: 2rem;
+        gap:1rem;
     }
     .center{
         justify-content: center;
@@ -97,17 +98,22 @@ article{
         padding: 2rem;
     }
     .hero_container{
-        height: 80rem;
+        /* height: 80rem; */
+        height: fit-content;
         margin: 2rem;
     }
     .main_image{
         margin-top: 8rem;
         margin-bottom: 5rem;
         justify-content: center;
-        height: 40rem;
+        /* height: 80vh; */
         width: 90vw;
         
         
+    }
+    .main_text{
+        height: fit-content;
+        padding-bottom: 1rem;
     }
 
 

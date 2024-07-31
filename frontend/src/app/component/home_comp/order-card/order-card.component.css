@@ -91,6 +91,9 @@ button{
     .button_input{
         flex-direction: column;
     }
+    .name{
+        height: 3rem;
+    }
     
 }
 @media screen and (max-width:500) {

@@ -9,7 +9,7 @@ export const checkUser=asyncHandler(async(req,res,next)=>{
         return r.toString(16);
     });
     const uid=req.cookies?.uid;
-    console.log(uid,'inital cookie',req.cookies,req)
+    // console.log(uid,'inital cookie',req.cookies,req)
     
     if(!uid){
    

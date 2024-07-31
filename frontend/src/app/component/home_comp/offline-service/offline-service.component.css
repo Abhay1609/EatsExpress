@@ -60,6 +60,9 @@ span{
 .image{
     width: 60rem;
 }
+.image1,.image3{
+    width: 60rem;
+}
 .image2{
     height: 400px;
     margin:0px;
@@ -102,6 +105,9 @@ section{
         width: 90vw;
         
         
+    }
+    .image1,.image3{
+        width: initial;
     }
     .card{
         height: fit-content;

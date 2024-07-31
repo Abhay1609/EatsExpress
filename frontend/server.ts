@@ -4,7 +4,7 @@ import express from 'express';
 import { fileURLToPath } from 'node:url';
 import { dirname, join, resolve } from 'node:path';
 import bootstrap from './src/main.server';
-
+import cors from 'cors';  
 // The Express app is exported so that it can be used by serverless Functions.
 export function app(): express.Express {
   const server = express();
@@ -49,6 +49,11 @@ function run(): void {
 
   // Start up the Node server
   const server = app();
+  server.use(cors({
+    origin: 'https://incandescent-florentine-df1f4f.netlify.app', // Allow your Netlify app
+    methods: ['GET', 'POST', 'PUT', 'DELETE'], // Allowed methods
+    allowedHeaders: ['Content-Type', 'Authorization'] // Allowed headers
+  }));
   server.listen(port, () => {
     console.log(`Node Express server listening on http://localhost:${port}`);
   });

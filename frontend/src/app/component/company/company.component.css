@@ -81,7 +81,7 @@ section{
         padding: 0;
     }
     .image{
-        width: 90vw;
+        width: initial;
     }
     .center{
         justify-content: center;
