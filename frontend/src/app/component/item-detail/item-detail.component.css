@@ -106,7 +106,7 @@ button{
     margin-left: 15px;
     padding-left: 30px;
     padding-right: 30px;
-
+    width: 18rem;
     padding-top: 0rem;
     padding-bottom: 0rem;
     margin-bottom: 15px;
@@ -129,7 +129,7 @@ button{
     margin-left: 15px;
     padding-left: 30px;
     padding-right: 30px;
-
+    width: 18rem;
     padding-top: 0rem;
     padding-bottom: 0rem;
     margin-bottom: 15px;
@@ -195,6 +195,9 @@ span{
     }
     .bg_contianer{
         height: fit-content;
+    }
+    .input{
+        height: 3.2rem;
     }
 
 

@@ -159,6 +159,9 @@ button{
         
         
     }
+    .name{
+        font-size: 1rem;
+    }
     .price{
         margin-bottom: 0px;
         padding-bottom: 0px;

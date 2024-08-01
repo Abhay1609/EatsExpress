@@ -4,7 +4,7 @@
     @for(item of cartservice.data();track item._id){
     <div class="card flex gap-4 p-5 ">
         <div class="flex items-center"><img [src]="item.item.product.image.url" class="w-24"></div>
-        <div class="container flex m-1.5 justify-around gap-3 flex-col grow ">
+        <div class="flex_container flex m-1.5 justify-around gap-3 flex-col grow ">
             <div class="flex title items-end " >{{item.item.product.title}}</div>
             <div class="flex price">${{item.item.product.price.value}}</div>
             <div class="flex remove cursor-pointer" (click)="cartservice.removeCartItem(item.item.product._id)"><p>Remove<p></div>
@@ -24,7 +24,7 @@
         </div>
 
     </div>}@else{
-    <div class="flex flex-col h-screen justify-center gap-10">
+    <div class="flex flex-col h-screen justify-center gap-10 overflow-x-hidden">
         <div class="nofound flex justify-center w-full">
             We couldn't found any item in your cart.
         </div>

@@ -52,7 +52,8 @@ export const getItem=asyncHandler(async(req,res)=>{
   
     const options={
         httpOnly:true,
-        secure:true
+        secure:true,
+        sameSite: 'None' 
     }
   
     return res.status(200)
@@ -99,7 +100,8 @@ export const addCart = asyncHandler(async (req, res) => {
   
     const options = {
       httpOnly: true,
-      secure: true
+      secure: true,
+      sameSite: 'None' 
     };
   
     return res.status(200)
